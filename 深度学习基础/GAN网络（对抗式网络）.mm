@@ -1,0 +1,19 @@
+
+<map>
+  <node ID="root" TEXT="GAN网络（对抗式网络）">
+    <node TEXT="组成：Generator+Discriminator，其中Z是一个简单的样本分布" ID="kyUI5wugjd" _mubu_text="%3Cspan%3E%E7%BB%84%E6%88%90%EF%BC%9AGenerator+Discriminator%EF%BC%8C%E5%85%B6%E4%B8%ADZ%E6%98%AF%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%3C/span%3E" STYLE="bubble" POSITION="default"/>
+    <node TEXT="训练步骤：" ID="eLR2URSEeR" _mubu_text="%3Cspan%3E%E8%AE%AD%E7%BB%83%E6%AD%A5%E9%AA%A4%EF%BC%9A%3C/span%3E" STYLE="bubble" POSITION="default">
+      <node TEXT="step1：固定Generator参数，然后对于Discriminator网络输入数据库和Generator输出，更新Discriminator参数" ID="sjAEVNiekq" _mubu_text="%3Cspan%3Estep1%EF%BC%9A%E5%9B%BA%E5%AE%9AGenerator%E5%8F%82%E6%95%B0%EF%BC%8C%E7%84%B6%E5%90%8E%E5%AF%B9%E4%BA%8EDiscriminator%E7%BD%91%E7%BB%9C%E8%BE%93%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CGenerator%E8%BE%93%E5%87%BA%EF%BC%8C%E6%9B%B4%E6%96%B0Discriminator%E5%8F%82%E6%95%B0%3C/span%3E" STYLE="fork"/>
+      <node TEXT="step2：固定Discriminator，更新Generator参数。" ID="XfI12QkYCo" _mubu_text="%3Cspan%3Estep2%EF%BC%9A%E5%9B%BA%E5%AE%9ADiscriminator%EF%BC%8C%E6%9B%B4%E6%96%B0Generator%E5%8F%82%E6%95%B0%E3%80%82%3C/span%3E" STYLE="fork"/>
+    </node>
+    <node TEXT="评估GAN" ID="Pgt1iqapTc" _mubu_text="%3Cspan%3E%E8%AF%84%E4%BC%B0GAN%3C/span%3E" STYLE="bubble" POSITION="default">
+      <node TEXT="多样性：看生成的结果是否种类丰富" ID="9cA4dHP6dt" _mubu_text="%3Cspan%3E%E5%A4%9A%E6%A0%B7%E6%80%A7%EF%BC%9A%E7%9C%8B%E7%94%9F%E6%88%90%E7%9A%84%E7%BB%93%E6%9E%9C%E6%98%AF%E5%90%A6%E7%A7%8D%E7%B1%BB%E4%B8%B0%E5%AF%8C%3C/span%3E" STYLE="fork"/>
+      <node TEXT="FID：将生成器生成的结果和判别器的结果送到分类器中，计算生成样本高斯分布的均值和方差，计算训练样本高斯分布的均值和反差，计算两个高斯分布的弗雷歇距离，即为FID" ID="DcbHmhMbUD" _mubu_text="%3Cspan%3EFID%EF%BC%9A%E5%B0%86%E7%94%9F%E6%88%90%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E7%BB%93%E6%9E%9C%E5%92%8C%E5%88%A4%E5%88%AB%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%9C%E9%80%81%E5%88%B0%E5%88%86%E7%B1%BB%E5%99%A8%E4%B8%AD%EF%BC%8C%E8%AE%A1%E7%AE%97%E7%94%9F%E6%88%90%E6%A0%B7%E6%9C%AC%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%E7%9A%84%E5%9D%87%E5%80%BC%E5%92%8C%E6%96%B9%E5%B7%AE%EF%BC%8C%E8%AE%A1%E7%AE%97%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%E7%9A%84%E5%9D%87%E5%80%BC%E5%92%8C%E5%8F%8D%E5%B7%AE%EF%BC%8C%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%E7%9A%84%E5%BC%97%E9%9B%B7%E6%AD%87%E8%B7%9D%E7%A6%BB%EF%BC%8C%E5%8D%B3%E4%B8%BAFID%3C/span%3E" STYLE="fork"/>
+    </node>
+    <node TEXT="conditional GAN" ID="jFpVOmv3Mi" _mubu_text="%3Cspan%3Econditional%20GAN%3C/span%3E" STYLE="bubble" POSITION="default">
+      <node TEXT="可用于文字转图像、图像转图像和语音转图像" ID="YfgOVe9c7p" _mubu_text="%3Cspan%3E%E5%8F%AF%E7%94%A8%E4%BA%8E%E6%96%87%E5%AD%97%E8%BD%AC%E5%9B%BE%E5%83%8F%E3%80%81%E5%9B%BE%E5%83%8F%E8%BD%AC%E5%9B%BE%E5%83%8F%E5%92%8C%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%9B%BE%E5%83%8F%3C/span%3E" STYLE="fork"/>
+      <node TEXT="对于无需输入的GAN来说，输入只需要Z，不需要X。对于conditional GAN来说，生成器（Generator）需要根据x来生成y，同时判别器也需要根据x来判断y好坏。" ID="Z6k0jgYRE6" _mubu_text="%3Cspan%3E%E5%AF%B9%E4%BA%8E%E6%97%A0%E9%9C%80%E8%BE%93%E5%85%A5%E7%9A%84GAN%E6%9D%A5%E8%AF%B4%EF%BC%8C%E8%BE%93%E5%85%A5%E5%8F%AA%E9%9C%80%E8%A6%81Z%EF%BC%8C%E4%B8%8D%E9%9C%80%E8%A6%81X%E3%80%82%E5%AF%B9%E4%BA%8Econditional%20GAN%E6%9D%A5%E8%AF%B4%EF%BC%8C%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88Generator%EF%BC%89%E9%9C%80%E8%A6%81%E6%A0%B9%E6%8D%AEx%E6%9D%A5%E7%94%9F%E6%88%90y%EF%BC%8C%E5%90%8C%E6%97%B6%E5%88%A4%E5%88%AB%E5%99%A8%E4%B9%9F%E9%9C%80%E8%A6%81%E6%A0%B9%E6%8D%AEx%E6%9D%A5%E5%88%A4%E6%96%ADy%E5%A5%BD%E5%9D%8F%E3%80%82%3C/span%3E" STYLE="fork"/>
+    </node>
+    <node TEXT="cycle GAN" ID="wnxMzr73DU" _mubu_text="%3Cspan%3Ecycle%20GAN%3C/span%3E" STYLE="bubble" POSITION="default"/>
+  </node>
+</map>

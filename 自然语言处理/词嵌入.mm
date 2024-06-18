@@ -1,0 +1,28 @@
+
+<map>
+  <node ID="root" TEXT="词嵌入">
+    <node TEXT="词嵌入是什么：" ID="WTDraJfQk3" _mubu_text="%3Cspan%3E%E8%AF%8D%E5%B5%8C%E5%85%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%3C/span%3E" STYLE="bubble" POSITION="right">
+      <node TEXT="词嵌入是一种将文本的词转化为数字向量的方法。" ID="YYEjmuvhEU" _mubu_text="%3Cspan%3E%E8%AF%8D%E5%B5%8C%E5%85%A5%E6%98%AF%E4%B8%80%E7%A7%8D%E5%B0%86%E6%96%87%E6%9C%AC%E7%9A%84%E8%AF%8D%E8%BD%AC%E5%8C%96%E4%B8%BA%E6%95%B0%E5%AD%97%E5%90%91%E9%87%8F%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82%3C/span%3E" STYLE="fork"/>
+      <node TEXT="词嵌入的过程就是将一个维数为所有词的高纬度空间映射到一个维数低的连续空间中，词嵌入的结果就是生成词向量。" ID="Gu704o24Sl" _mubu_text="%3Cspan%3E%E8%AF%8D%E5%B5%8C%E5%85%A5%E7%9A%84%E8%BF%87%E7%A8%8B%E5%B0%B1%E6%98%AF%E5%B0%86%E4%B8%80%E4%B8%AA%E7%BB%B4%E6%95%B0%E4%B8%BA%E6%89%80%E6%9C%89%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%AC%E5%BA%A6%E7%A9%BA%E9%97%B4%E6%98%A0%E5%B0%84%E5%88%B0%E4%B8%80%E4%B8%AA%E7%BB%B4%E6%95%B0%E4%BD%8E%E7%9A%84%E8%BF%9E%E7%BB%AD%E7%A9%BA%E9%97%B4%E4%B8%AD%EF%BC%8C%E8%AF%8D%E5%B5%8C%E5%85%A5%E7%9A%84%E7%BB%93%E6%9E%9C%E5%B0%B1%E6%98%AF%E7%94%9F%E6%88%90%E8%AF%8D%E5%90%91%E9%87%8F%E3%80%82%3C/span%3E" STYLE="fork"/>
+    </node>
+    <node TEXT="分布式表示" ID="UUXHj3FkR9" _mubu_text="%3Cspan%3E%E5%88%86%E5%B8%83%E5%BC%8F%E8%A1%A8%E7%A4%BA%3C/span%3E" STYLE="bubble" POSITION="left">
+      <node TEXT="原理：利用信息间的相关性，将信息分布式的存储在向量各个维数中" ID="1Hd11cQnyi" _mubu_text="%3Cspan%3E%E5%8E%9F%E7%90%86%EF%BC%9A%E5%88%A9%E7%94%A8%E4%BF%A1%E6%81%AF%E9%97%B4%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%8C%E5%B0%86%E4%BF%A1%E6%81%AF%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%AD%98%E5%82%A8%E5%9C%A8%E5%90%91%E9%87%8F%E5%90%84%E4%B8%AA%E7%BB%B4%E6%95%B0%E4%B8%AD%3C/span%3E" STYLE="fork"/>
+      <node TEXT="根据建模方式不同分类：基于矩阵的分布表示、基于聚类的分布表示、基于神经网络的分布表示" ID="Ny9IWXVCrm" _mubu_text="%3Cspan%3E%E6%A0%B9%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E5%BC%8F%E4%B8%8D%E5%90%8C%E5%88%86%E7%B1%BB%EF%BC%9A%E5%9F%BA%E4%BA%8E%E7%9F%A9%E9%98%B5%E7%9A%84%E5%88%86%E5%B8%83%E8%A1%A8%E7%A4%BA%E3%80%81%E5%9F%BA%E4%BA%8E%E8%81%9A%E7%B1%BB%E7%9A%84%E5%88%86%E5%B8%83%E8%A1%A8%E7%A4%BA%E3%80%81%E5%9F%BA%E4%BA%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%88%86%E5%B8%83%E8%A1%A8%E7%A4%BA%3C/span%3E" STYLE="fork">
+        <node TEXT="核心思想：" ID="SyFLVh5BWm" _mubu_text="%3Cspan%3E%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3%EF%BC%9A%3C/span%3E" STYLE="fork">
+          <node TEXT="1.选择一种方式表示上下文" ID="D7NQCR7w54" _mubu_text="%3Cspan%3E1.%E9%80%89%E6%8B%A9%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F%E8%A1%A8%E7%A4%BA%E4%B8%8A%E4%B8%8B%E6%96%87%3C/span%3E" STYLE="fork"/>
+          <node TEXT="2.建立模型表示“目标词”与上下文的关系" ID="7bAKQXaXdV" _mubu_text="%3Cspan%3E2.%E5%BB%BA%E7%AB%8B%E6%A8%A1%E5%9E%8B%E8%A1%A8%E7%A4%BA%E2%80%9C%E7%9B%AE%E6%A0%87%E8%AF%8D%E2%80%9D%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E7%9A%84%E5%85%B3%E7%B3%BB%3C/span%3E" STYLE="fork"/>
+        </node>
+      </node>
+      <node TEXT="任务流程：" ID="woLj5JYmYY" _mubu_text="%3Cspan%3E%E4%BB%BB%E5%8A%A1%E6%B5%81%E7%A8%8B%EF%BC%9A%3C/span%3E" STYLE="fork">
+        <node TEXT="1.构建词向量，将文本表示为数字向量，【输入值，输出值】" ID="Ta18R2bLUx" _mubu_text="%3Cspan%3E1.%E6%9E%84%E5%BB%BA%E8%AF%8D%E5%90%91%E9%87%8F%EF%BC%8C%E5%B0%86%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E4%B8%BA%E6%95%B0%E5%AD%97%E5%90%91%E9%87%8F%EF%BC%8C%E3%80%90%E8%BE%93%E5%85%A5%E5%80%BC%EF%BC%8C%E8%BE%93%E5%87%BA%E5%80%BC%E3%80%91%3C/span%3E" STYLE="fork"/>
+        <node TEXT="2.将【输入值，输出值】送到模型进行训练" ID="xfrN6WPJT6" _mubu_text="%3Cspan%3E2.%E5%B0%86%E3%80%90%E8%BE%93%E5%85%A5%E5%80%BC%EF%BC%8C%E8%BE%93%E5%87%BA%E5%80%BC%E3%80%91%E9%80%81%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8C%E8%AE%AD%E7%BB%83%3C/span%3E" STYLE="fork"/>
+        <node TEXT="3.构建损失函数优化模型" ID="200gng4wiN" _mubu_text="%3Cspan%3E3.%E6%9E%84%E5%BB%BA%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E4%BC%98%E5%8C%96%E6%A8%A1%E5%9E%8B%3C/span%3E" STYLE="fork">
+          <node TEXT="经典的softmax函数由于输出值巨大，文本常用字高达10000，计算量大，因此常采用其他公式，如softmax负采样和多层次softmax" ID="McUA6WcBIG" _mubu_text="%3Cspan%3E%E7%BB%8F%E5%85%B8%E7%9A%84softmax%E5%87%BD%E6%95%B0%E7%94%B1%E4%BA%8E%E8%BE%93%E5%87%BA%E5%80%BC%E5%B7%A8%E5%A4%A7%EF%BC%8C%E6%96%87%E6%9C%AC%E5%B8%B8%E7%94%A8%E5%AD%97%E9%AB%98%E8%BE%BE10000%EF%BC%8C%E8%AE%A1%E7%AE%97%E9%87%8F%E5%A4%A7%EF%BC%8C%E5%9B%A0%E6%AD%A4%E5%B8%B8%E9%87%87%E7%94%A8%E5%85%B6%E4%BB%96%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%A6%82softmax%E8%B4%9F%E9%87%87%E6%A0%B7%E5%92%8C%E5%A4%9A%E5%B1%82%E6%AC%A1softmax%3C/span%3E" STYLE="fork"/>
+          <node TEXT="softmax层负采样：除了【输入值，预测上下文值】外，增加【k个噪声，预测上下文值】，并把激活函数换成sigmod函数" ID="30cSYiDeyZ" _mubu_text="%3Cspan%3Esoftmax%E5%B1%82%E8%B4%9F%E9%87%87%E6%A0%B7%EF%BC%9A%E9%99%A4%E4%BA%86%E3%80%90%E8%BE%93%E5%85%A5%E5%80%BC%EF%BC%8C%E9%A2%84%E6%B5%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%80%BC%E3%80%91%E5%A4%96%EF%BC%8C%E5%A2%9E%E5%8A%A0%E3%80%90k%E4%B8%AA%E5%99%AA%E5%A3%B0%EF%BC%8C%E9%A2%84%E6%B5%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%80%BC%E3%80%91%EF%BC%8C%E5%B9%B6%E6%8A%8A%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0%E6%8D%A2%E6%88%90sigmod%E5%87%BD%E6%95%B0%3C/span%3E" STYLE="fork"/>
+          <node TEXT="多层次softmax：采用二叉树思想，用词语作为叶子的多层次结构来代替softmax的一层。" ID="bVLTpDx4j4" _mubu_text="%3Cspan%3E%E5%A4%9A%E5%B1%82%E6%AC%A1softmax%EF%BC%9A%E9%87%87%E7%94%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%9D%E6%83%B3%EF%BC%8C%E7%94%A8%E8%AF%8D%E8%AF%AD%E4%BD%9C%E4%B8%BA%E5%8F%B6%E5%AD%90%E7%9A%84%E5%A4%9A%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%9D%A5%E4%BB%A3%E6%9B%BFsoftmax%E7%9A%84%E4%B8%80%E5%B1%82%E3%80%82%3C/span%3E" STYLE="fork"/>
+        </node>
+        <node TEXT="4.选取相似词进行测试。" ID="lEWaT8ipAF" _mubu_text="%3Cspan%3E4.%E9%80%89%E5%8F%96%E7%9B%B8%E4%BC%BC%E8%AF%8D%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95%E3%80%82%3C/span%3E" STYLE="fork"/>
+      </node>
+    </node>
+  </node>
+</map>
